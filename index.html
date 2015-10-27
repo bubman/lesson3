@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Lesson3 - Form</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+		<body>
+			<h1>Урок "Форми": теги та їх атрибути.<h1>
+			<h2>Розкажіть трошки про себе...</h2>
+			<p>Спробуйте створити аналогічну форму. Для цілей демонстрації цілком підійдуть і вигадані.</p>
+			<fieldset>
+				<legend>Коротко про себе</legend>
+				<label for="name">Ім'я:</label>
+				<input id="name" type="text" name="name"/>
+				<p><label for="surname">Прізвище:</label>
+				<input id="surname" type="text" name="surname"/></p>
+				<p><label>Стать:</label>
+				<input id="male" type="radio" name="stat" value="male"/>
+				<label for="male">Чоловічий</label>
+				<input id="female" type="radio" name="stat" value="female"/>
+				<label for="female">Жіночий</label></p>
+				<p><label>Вік:</label>
+				<input type="number" name="age" min="1" max="120" size="3"/> років
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Подробно про себе</legend>
+				<input id="man" type="radio" name="sex" value="man"/>
+				<label for="man">Молодий чоловік</label>
+				<br>
+				<input id="woman" type="radio" name="sex" value="woman"/>
+				<label for="woman">Дівчина</label>
+				<br>
+				<input id="date" type="text" name="date"/>
+				<label for="date">Дата народження</label>
+				<br>
+				<input id="family" type="text" name="family"/>
+				<label for="family">Сімейне положення</label>
+				<br>
+				<input id="social" type="text" name="social"/>
+				<label for="social">Соціальний статус</label>
+				<br>
+				<input id="home" type="text" name="home"/>
+				<label for="home">Місце проживання</label>
+				<p>
+				<b>Що ви зазвичай робите на вихідних:</b>
+				</p>
+				<input id="sleep" type="checkbox" name="wekend[]" value="sleeping"/>
+				<label for="sleep">Сплю</label>
+				<br>
+				<input id="walk" type="checkbox" name="wekend[]" value="walk_friend"/>
+				<label for="walk">Гуляю з друзями</label>
+				<br>
+				<input id="fish" type="checkbox" name="wekend[]" value="go_fishing"/>
+				<label for="fish">Хожу на рибалку</label>
+				<br>
+				<input id="game" type="checkbox" name="wekend[]" value="play_games"/>
+				<label for="game">Граю в ігри</label>
+				<p>
+				<b>Розповісти про форми в книзі, присвяченій HTML:</b>
+				</p>
+				<select>
+					<option>Site frequency</option>
+					<option>html</option>
+					<option>form</option>
+					<option>div</option>
+				</select>
+				<p>
+				<b>Скільки книг ви прочитали за своє життя:</b>
+				</p>
+				<input id="zero" type="radio" name="zero"/>
+				<label for="zero">0-10</label>
+				<br>
+				<input id="eleven" type="radio" name="eleven"/>
+				<label for="eleven">11-20</label>
+				<br>
+				<input id="twentyone" type="radio" name="twentyone"/>
+				<label for="twentyone">21-50</label>
+				<br>
+				<input id="fifty" type="radio" name="fifty"/>
+				<label for="fifty">50+</label>
+				<p>
+				<b>Ваші коментарі:</b>
+				</p>
+				<textarea type="textarea" name="coment" cols="60" rows="10"></textarea>
+				<p>
+				<select name="position" multiple="mult" size="3">
+					<option value="1">Перша позиція</option>
+					<option value="2">Друга позиція</option>
+					<option value="3">Третя позиція</option>
+				</select>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>І в заключенні</legend>
+				<input type="text" name="noactiv" disabled="diasable" value="Це поле було введено до вас" size="25"/>
+				<p><label><b>Email:</b></label></label>
+				<br>
+				<input type="text" name="email"/></p>
+				<p>
+				<b>Хочете пыдписатися на саму модну розсилку спаму?</b>
+				<br>
+				<em>Оберіть категорію</em>
+				<p><input id="device" type="checkbox" name="device"/>
+				<label for="device">Обладнання</label>
+				<br>
+				<input id="eat" type="checkbox" name="eat"/>
+				<label for="eat">Як приготувати обід?</label>
+				<br>
+				<input id="million" type="checkbox" name="million"/>
+				<label for="million">Зароби мільйон за два дні!</label></p>
+				<b>На скільки складна задача:</b>
+				<p>
+				<input id="no" type="radio" name="no"/>	
+				<label for="no">Зовсім ні</label>
+				<br>
+				<input id="so" type="radio" name="so"/>	
+				<label for="so">Так собі</label>
+				<br>
+				<input id="hard" type="radio" name="hard"/>	
+				<label for="hard">Ледве справились</label>
+				</p>
+			</fieldset>
+				<p><input type="submit" value="Надіслати"/></p>
+		</body>
+</html>

@@ -1,6 +1,37 @@
-body{
-	margin-right:600px;
+.wrapper {
+    width: 700px;
+    margin-top: 10px;
+    padding: 15px;
+    margin: auto;
+}
+body {
+	padding:0;
+	margin:0;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 20px;
 }
 legend{
 	font-weight: bold;	
+}
+	ul, li {
+	padding:0;
+    margin:0;
+    list-style:none;
+}
+.main li {
+	padding: 7px 0;
+}
+.coment {
+	padding-top: 15px;
+	display: block;
+	font-weight: bold;
+}
+.email{
+	padding-top: 10px;
+	display: block;
+	font-weight: bold;
+}
+fieldset {
+	margin-bottom: 10px;
 }

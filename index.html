@@ -3,7 +3,7 @@
       <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="ru">
 	<head>
 		<title>Lesson3 - Form</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 		<body>
 			<div class="wrapper">
@@ -33,14 +33,14 @@
 										
 									<li>
 										<label>Вік:</label>
-										<input type="number" name="age" min="1" max="120" size="3"/> років
+										<input type="text" name="age" size="3"/> років
 									</li>	
 								</ul>	
 						</fieldset>
 						<fieldset>
 							<legend>Детальніше про себе</legend>
 								<ul>	
-									<ul>
+									
 										<li>
 											<input id="man" type="radio" name="sex" value="man"/>
 											<label for="man">Молодий чоловік</label>
@@ -126,18 +126,17 @@
 												<label class="coment" for="coment">Ваші коментарі:</label>
 											</li>	
 											<li>	
-												<textarea id="coment" type="text" name="coment" cols="60" rows="10"></textarea>
+												<textarea id="coment"  name="coment" cols="60" rows="10"></textarea>
 											</li>	
 
 											<li>
-												<select name="position[]" multiple="mult" size="3">
+												<select name="position[]" multiple="multiple" size="3">
 												<option value="1">Перша позиція</option>
 												<option value="2">Друга позиція</option>
 												<option value="3">Третя позиція</option>
 												</select>
 											</li>	
 										</ul>
-								</ul>
 					</fieldset>
 					<fieldset>
 						<legend>І в заключенні</legend>
@@ -149,10 +148,13 @@
 								<li>	
 									<label class="email" for="email">Email:</label>
 									<input id="email
-									" type="text" name="email"/></p>
+									" type="text" name="email"/>
 								</li>
+
+								<li>
 									<h4>Хочете пыдписатися на саму модну розсилку спаму?</h4>
 									<em>Оберіть категорію</em>		
+								</li>	
 								<li>
 									<input id="device" type="checkbox" name="caregor[]"/>
 									<label for="device">Обладнання</label>
@@ -166,8 +168,10 @@
 								<li>
 									<input id="million" type="checkbox" name="caregor[]"/>
 									<label for="million">Зароби мільйон за два дні!</label>
-								</li>	
+								</li>
+								<li>	
 									<h4>На скільки складна задача:</h4>
+								</li>	
 								<li>	
 									<input id="no" type="radio" name="dific" value="Зовсім ні"/>	
 									<label for="no">Зовсім ні</label>
